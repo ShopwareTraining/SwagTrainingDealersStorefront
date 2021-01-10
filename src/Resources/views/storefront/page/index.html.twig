@@ -1,0 +1,14 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_content %}
+    <h1>Dealers overview</h1>
+    <ul>
+        {% for dealer in dealers %}
+            <li>
+                <h3>{{ dealer.name }}</h3>
+                <p>{{ dealer.description }}</p>
+                <address>{{ dealer.address }}</address>
+            </li>
+        {%  endfor %}
+    </ul>
+{% endblock %}
