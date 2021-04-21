@@ -1,5 +1,5 @@
 {
-  "name": "yireo/shopware6-example-dealers-core",
+  "name": "yireo/shopware6-example-dealers-storefront",
   "description": "Shopware 6 example dealers - Storefront plugin",
   "type": "shopware-platform-plugin",
   "license": "MIT",
