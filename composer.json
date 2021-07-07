@@ -1,15 +1,15 @@
 {
-  "name": "yireo/shopware6-example-dealers-storefront",
+  "name": "shopware-training/dealers-storefront",
   "description": "Shopware 6 example dealers - Storefront plugin",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Yireo\\ExampleDealersStorefront\\": "src/"
+      "SwagTraining\\DealersStorefront\\": "src/"
     }
   },
   "extra": {
-    "shopware-plugin-class": "Yireo\\ExampleDealersStorefront\\YireoExampleDealersStorefront",
+    "shopware-plugin-class": "SwagTraining\\DealersStorefront\\SwagTrainingDealersStorefront",
     "label": {
       "en-GB": "Shopware 6 example dealers - Storefront plugin"
     }

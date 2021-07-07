@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Yireo\ExampleDealersStorefront\Controller;
+namespace SwagTraining\DealersStorefront\Controller;
 
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepositoryInterface;
@@ -10,18 +10,18 @@ use Shopware\Storefront\Controller\StorefrontController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Yireo\ExampleDealersCore\Core\Content\Dealer\DealerCollection;
+use SwagTraining\DealersCore\Core\Content\Dealer\DealerCollection;
 
 /**
  * Class IndexController
- * @package Yireo\ExampleDealersStorefront\Controller
+ * @package SwagTraining\DealersStorefront\Controller
  */
 class IndexController extends StorefrontController
 {
     /**
      * @var EntityRepositoryInterface
      */
-    private $dealerRepository;
+    private EntityRepositoryInterface $dealerRepository;
 
     /**
      * ExampleController constructor.
@@ -39,7 +39,7 @@ class IndexController extends StorefrontController
     public function showPage(Request $request, Context $context): Response
     {
         return $this->renderStorefront(
-            '@YireoExampleDealersStorefront/storefront/page/index.html.twig',
+            '@SwagTrainingDealersStorefront/storefront/page/index.html.twig',
             [
                 'dealers' => $this->getDealers($context)
             ]

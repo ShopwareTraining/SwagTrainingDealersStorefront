@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Yireo\ExampleDealersStorefront\Core\Api;
+namespace SwagTraining\DealersStorefront\Core\Api;
 
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepositoryInterface;
@@ -19,7 +19,7 @@ class DealerController extends AbstractController
     /**
      * @var EntityRepositoryInterface
      */
-    private $dealerRepository;
+    private EntityRepositoryInterface $dealerRepository;
 
     /**
      * DealerController constructor.
@@ -36,5 +36,6 @@ class DealerController extends AbstractController
     public function getDealers(Request $request, Context $context): Response
     {
         $searchResult = $this->dealerRepository->search(new Criteria(), Context::createDefaultContext());
+        // @todo
     }
 }
