@@ -1,5 +1,5 @@
 {
-  "name": "shopware-training/dealers-storefront",
+  "name": "swag-training/dealers-storefront",
   "description": "Shopware 6 example dealers - Storefront plugin",
   "type": "shopware-platform-plugin",
   "license": "MIT",
