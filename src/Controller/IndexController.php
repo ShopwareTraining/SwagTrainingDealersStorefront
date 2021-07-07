@@ -34,7 +34,7 @@ class IndexController extends StorefrontController
 
     /**
      * @RouteScope(scopes={"storefront"})
-     * @Route("/dealers", name="frontend.dealers.index", options={"seo"="false"}, methods={"GET"})
+     * @Route("/swag-training/dealers", name="frontend.dealers.index", options={"seo"="false"}, methods={"GET"})
      */
     public function showPage(Request $request, Context $context): Response
     {
